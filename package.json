@@ -2,8 +2,9 @@
   "name": "es-templates-server",
   "version": "0.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node --use_strict app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/liviuignat/es-templates-server/issues"
   },
-  "homepage": "https://github.com/liviuignat/es-templates-server"
+  "homepage": "https://github.com/liviuignat/es-templates-server",
+  "dependencies": {
+    "koa": "^1.0.0",
+    "koa-body-parser": "^1.1.2",
+    "koa-gzip": "^0.1.0",
+    "koa-methodoverride": "^0.4.2",
+    "koa-router": "^5.1.2",
+    "koa-static": "^1.4.9"
+  }
 }
