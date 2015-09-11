@@ -23,7 +23,7 @@ class Server {
 
     this.app.listen(this.getPort());
 
-    logger.log(`Server started on port ${this.getPort()} on "${this.getEnvironment()}" environment`);
+    logger.log(`Server started on port ${this.getPort()} on ${this.getEnvironment()} environment`);
 
     return this;
   }
