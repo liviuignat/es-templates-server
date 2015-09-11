@@ -1,11 +1,10 @@
-var path = require('path');
-var koa = require('koa');
-var bodyParser = require('koa-body-parser');
-var methodOverride = require('koa-methodoverride');
-var gzip = require('koa-gzip');
-var route = require('koa-route');
-var logger = require('./common/log');
-var Routes = require('./routes');
+const path = require('path');
+const koa = require('koa');
+const bodyParser = require('koa-body-parser');
+const methodOverride = require('koa-methodoverride');
+const gzip = require('koa-gzip');
+const logger = require('./common/log');
+const Routes = require('./routes');
 
 class Server {
   constructor(options) {
@@ -30,7 +29,7 @@ class Server {
   }
 
   setupRoutes() {
-    var routes = new Routes();
+    const routes = new Routes();
     routes.setupRoutes(this.app);
     return this;
   }

@@ -1,5 +1,5 @@
-var route = require('koa-route');
-var homeRoutes = require('./homeRoutes');
+const route = require('koa-route');
+const homeRoutes = require('./homeRoutes');
 
 class Routes {
   setupRoutes(app) {
