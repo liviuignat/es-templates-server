@@ -1,7 +1,8 @@
 #Node v4 server
 
-Useful commands:
+Useful commands (may require admin rights):
 ```
+npm install
 gulp
 ```
 
